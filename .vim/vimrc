@@ -1,0 +1,21 @@
+" ~/.vim/vimrc
+
+" ======================
+" Configuración Básica
+" ======================
+set nocompatible
+filetype plugin indent on
+syntax enable
+
+runtime settings.vim
+runtime keymaps.vim
+runtime plugins.vim
+runtime functions.vim
+
+" Carga de configuración específica por tipo de archivo
+augroup filetype_custom
+  autocmd!
+  autocmd FileType python runtime ftplugin/python.vim
+  autocmd FileType php runtime ftplugin/php.vim
+  autocmd FileType javascript runtime ftplugin/javascript.vim
+augroup END

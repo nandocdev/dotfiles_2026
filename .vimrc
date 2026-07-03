@@ -1,0 +1,1 @@
+/home/ferncastillo/.vim/init.vim
